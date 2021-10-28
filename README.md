@@ -17,7 +17,6 @@ Vim related stuff
 sudo pacman -S vim neovim
 ```
 Will also need YouCompleteMe plugin for vim. Can be found in the unofficial repos at ``` https://aur.archlinux.org/packages/vim-youcompleteme-git/ ```
-``` 
 To get an unnofficial package from the AUR. 
 ``` 
 1) clone the git with
