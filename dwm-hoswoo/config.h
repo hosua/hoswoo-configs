@@ -31,7 +31,7 @@ static const char *fonts[]     = {"Mononoki Nerd Font:size=9:antialias=true:auto
 static const char col_1[]  = "#282a36"; /* background color of bar */
 static const char col_2[]  = "#282a36"; /* border color unfocused windows */
 static const char col_3[]  = "#f8f8f2";
-static const char col_4[]  = "#6A39C5"; /* border color focused windows and tags */
+static const char col_4[]  = "#5224DA"; /* border color focused windows and tags */
 
 /* bar opacity 
  * 0xff is no transparency.
@@ -109,7 +109,7 @@ static const char *startalsa[]  = {"st", "alsamixer", NULL };
 static const char *screenshot[] = {"scrot", "/home/hoswoo/Pictures/Screenshots/.jpg", "-s", NULL };
 static const char *browsermenu[] = { "/home/hoswoo/Desktop/Scripts/browsermenu.sh", NULL };
 static const char *powermenu[] = { "/home/hoswoo/Desktop/Scripts/powermenu.sh", NULL };
-// static const char *gamemenu[] = { "/home/hoswoo/Desktop/Scripts/gamemenu.sh", NULL };
+static const char *gamemenu[] = { "/home/hoswoo/Desktop/Scripts/gamemenu.sh", NULL };
 
 static Key keys[] = {
 	/* modifier             chain key  key        function        argument */
@@ -160,6 +160,8 @@ static Key keys[] = {
 	{ MODKEY|Mod1Mask,	-1,		XK_c,		spawn,	CMD("qalculate-gtk") },
 	{ MODKEY|Mod1Mask,      -1,        XK_b,      spawn,          {.v = browsermenu } },
 	{ MODKEY|Mod1Mask,	-1,		XK_p,	spawn,		{.v = powermenu } },
+	{ MODKEY|Mod1Mask,	-1,		XK_g,	spawn,		{.v = gamemenu } },
+	{ MODKEY|Mod1Mask,	-1,		XK_d,	spawn,		CMD("discord") },
 
 	TAGKEYS(                -1,        XK_1,                      0)
 	TAGKEYS(                -1,        XK_2,                      1)
