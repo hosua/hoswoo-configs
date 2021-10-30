@@ -1,0 +1,27 @@
+Display all 256 colors
+for i in {0..255}; do  printf "\x1b[38;5;${i}mcolor%-5i\x1b[0m" $i ; if ! (( ($i + 1 ) % 8 )); then echo ; fi ; done
+
+Add to path
+sudo nvim /etc/profile
+
+pyinstaller -D -F -n main -c "file.py"
+
+git add .
+git commit -m 'some message'
+git push origin main
+
+zip -r file.zip .
+
+if
+llvm-5.0.1.src.tar.xz … FAILED (unknown public key 8F0871F202119294)
+do
+gpg --recv-key 8F0871F202119294
+
+system-config-printer
+
+
+Find all zip files in folder
+find . -name "*.zip" -type f
+
+Delete all zip files in folder
+find . -name "*.zip" -type f -delete

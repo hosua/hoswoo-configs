@@ -31,7 +31,7 @@ static const char *fonts[]     = {"Mononoki Nerd Font:size=9:antialias=true:auto
 static const char col_1[]  = "#282a36"; /* background color of bar */
 static const char col_2[]  = "#282a36"; /* border color unfocused windows */
 static const char col_3[]  = "#f8f8f2";
-static const char col_4[]  = "#5224DA"; /* border color focused windows and tags */
+static const char col_4[]  = "#5fafd7"; /* border color focused windows and tags */
 
 /* bar opacity 
  * 0xff is no transparency.
