@@ -29,7 +29,7 @@ makepkg -si
 ```
 
 Info regarding tmux-yank: 
-``` https://github.com/tmux-plugins/tmux-yank 
+``` https://github.com/tmux-plugins/tmux-yank```
 Basically, after tmux-plugin-manager and tmux-yank is added to ~/.tmux.conf, press prefix + I to install (prefix + U) will update```
 		
 
