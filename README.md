@@ -17,15 +17,21 @@ Vim related stuff
 ```
 sudo pacman -S vim neovim
 ```
-Will also need YouCompleteMe plugin for vim. Can be found in the unofficial repos at ``` https://aur.archlinux.org/packages/vim-youcompleteme-git/ ```
+
+Unofficial repos:``` https://aur.archlinux.org/packages/vim-youcompleteme-git/ https://aur.archlinux.org/packages/tmux-plugin-manager/```
 To get an unnofficial package from the AUR. 
 ``` 
 1) clone the git with
 git clone https://aur.archlinux.org/vim-youcompleteme-git.git
 
 2) cd into the new directory created from cloning, then run  
-sudo make clean install
+makepkg -si
 ```
+
+Info regarding tmux-yank: 
+``` https://github.com/tmux-plugins/tmux-yank 
+Basically, after tmux-plugin-manager and tmux-yank is added to ~/.tmux.conf, press prefix + I to install (prefix + U) will update```
+		
 
 With neovim, youcompleteme with work out-of-the-box with no configurations, however on regular vim, it will require some configuration.
 
