@@ -23,7 +23,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Vundle Plugins
 Bundle 'ervandew/supertab'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 
