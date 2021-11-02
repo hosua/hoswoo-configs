@@ -17,7 +17,7 @@ Vim related stuff
 ```
 sudo pacman -S vim neovim vundle
 ```
-When running for the first time, run :PluginInstall in vim to get all plugins
+When running vim for the first time, run ```:PluginInstall``` to get all plugins
 
 Unofficial repos:``` https://aur.archlinux.org/packages/vim-youcompleteme-git/ https://aur.archlinux.org/packages/tmux-plugin-manager/```
 To get an unnofficial package from the AUR. 
