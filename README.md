@@ -34,11 +34,3 @@ Info regarding tmux-yank:
 Basically, after tmux-plugin-manager and tmux-yank is added to ~/.tmux.conf, press prefix + I to install (prefix + U) will update```
 		
 
-With neovim, youcompleteme with work out-of-the-box with no configurations, however on regular vim, it will require some configuration.
-
-First, run ``` vim --version | less ```
-You should see that your VIM version is higher than 7.3
-
-Next, run ``` vim --version | grep python ```
-If you don't see anything from this command, you will need to enable python by recompiling vim with proper python support, or using a different precompiled version of vim (like neovim) that contains python support by default.
-
