@@ -2,6 +2,7 @@ Below are some reminders for my future self
 ```
 Put .xinitrc in ~/
 Put .tmux.conf in ~/
+Put mysnips in ~/.vim
 Put vifm in ~/.config/
 Put scripts in ~/Desktop/Scripts/
 ```
@@ -17,7 +18,7 @@ Vim related stuff
 ```
 sudo pacman -S vim neovim vundle
 ```
-When running vim for the first time, run ```:PluginInstall``` to get all plugins
+When running vim for the first time, run ```:PluginInstall``` to install plugins in the vimrc
 
 Unofficial repos:``` https://aur.archlinux.org/packages/vim-youcompleteme-git/ https://aur.archlinux.org/packages/tmux-plugin-manager/```
 To get an unnofficial package from the AUR. 
