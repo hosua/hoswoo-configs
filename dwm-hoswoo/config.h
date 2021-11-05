@@ -31,6 +31,7 @@ static const char *fonts[]     = {"Mononoki Nerd Font:size=9:antialias=true:auto
 static const char col_1[]  = "#282a36"; /* background color of bar */
 static const char col_2[]  = "#282a36"; /* border color unfocused windows */
 static const char col_3[]  = "#f8f8f2";
+// static const char col_4[]  = "#700505"; /* border color focused windows and tags */
 static const char col_4[]  = "#5fafd7"; /* border color focused windows and tags */
 
 /* bar opacity 
@@ -145,10 +146,10 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,     -1,        XK_0,      tag,            {.ui = ~0 } },
 
     /* Switching between monitors */
-	{ MODKEY,               -1,        XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,               -1,        XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,     -1,        XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,     -1,        XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,               -1,        XK_period,  focusmon,       {.i = -1 } },
+	{ MODKEY,               -1,        XK_comma,   focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,     -1,        XK_period,  tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,     -1,        XK_comma, tagmon,         {.i = +1 } },
 	
     /* Keybindings for programs using the format SUPER + ALT + "key" */
 	{ MODKEY|Mod1Mask,      -1,        XK_s,      spawn,          CMD("tabbed -r 2 surf -pe x '.surf/html/homepage.html'") },
