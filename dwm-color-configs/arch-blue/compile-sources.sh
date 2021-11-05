@@ -1,8 +1,5 @@
 cd hoswoo-configs
-cd dmenu
-echo "Compiling dmenu..."
-sudo make clean install
-cd ../dwm-hoswoo
+cd dwm-hoswoo
 echo "Compiling dwm..."
 sudo make clean install
 cd ../st
