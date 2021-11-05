@@ -28,16 +28,20 @@ sudo pacman -S tmux chromium firefox alsa-utils scrot vifm feh neofetch
 ```
 sudo pacman -S vim neovim vundle
 ```
+
+## Vim plugin-manager
+
 When running vim for the first time, run ```:PluginInstall``` to install plugins in the vimrc
 
-Unofficial repos that I use:
+
+## Unofficial repos that I use:
 ``` 
 https://aur.archlinux.org/packages/vim-youcompleteme-git/ 
 https://aur.archlinux.org/packages/tmux-plugin-manager/
 https://aur.archlinux.org/packages/vundle-git/
 ```
 
-To get an unnofficial package from the AUR. 
+## To get an unnofficial package from the AUR. 
 ``` 
 1) clone the git with
 git clone https://aur.archlinux.org/vim-youcompleteme-git.git
@@ -46,12 +50,12 @@ git clone https://aur.archlinux.org/vim-youcompleteme-git.git
 makepkg -si
 ```
 
-Info regarding tmux-yank: 
+## Info regarding tmux-yank
 ``` https://github.com/tmux-plugins/tmux-yank```
 After tmux-plugin-manager and tmux-yank is added to ```~/.tmux.conf```, press (prefix + I) to install (prefix + U) will update
 
 
-## Color Schemes 
+## My Color Schemes 
 There is a folder named ``` dwm-color-configs ```. 
 Currently, it has two color configurations and a bash script named ```compile-sources.sh``` that automatically compiles everything necessary to switch the color scheme. 
 
