@@ -50,8 +50,8 @@ The MODKEY is set to the Super key (aka the Windows key).
 
 | Keybinding       | Action                                                                       |
 |------------------+------------------------------------------------------------------------------|
-| Ctrl + q         | Prefix                                                            	          |
-| Prefix - k       | Select up Pane 														                                  |
-| Prefix - j       | Select down Pane             												                        |
-| Prefix - h       | Select left Pane   			    										                            |                           
-| Prefix - l       | Select lright Pane   													                              |
+| CTRL + q         | PREFIX                                                            	          |
+| PREFIX - k       | Select up Pane 														                                  |
+| PREFIX - j       | Select down Pane             												                        |
+| PREFIX - h       | Select left Pane   			    										                            |                           
+| PREFIX - l       | Select lright Pane   													                              |
