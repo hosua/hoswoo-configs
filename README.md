@@ -1,9 +1,14 @@
+## Disclaimer 
+
 These configs are not intended for other people to use, however I don't mind if you do. Just note that I probably won't be keeping the best documentation on everything I am doing.
 
 The necessary packges that I list is not a comprehensive list. I forget many of the packages I've installed while setting things up so there will definitely be missing packages.
 
-Also, keybindings are located in the [dwm-hoswoo folder](https://github.com/hosua/hoswoo-configs/tree/main/dwm-hoswoo). I do not change them often so they will be up to date.
+## Keybinds 
 
+Keybindings are located in the [dwm-hoswoo folder](https://github.com/hosua/hoswoo-configs/tree/main/dwm-hoswoo). I do not change them often so they will be up to date.
+
+## Initial setup
 ```
 Put .xinitrc in ~/
 Put .tmux.conf in ~/
