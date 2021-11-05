@@ -1,4 +1,4 @@
-* My Keybindings
+* DWM Keybindings
 The MODKEY is set to the Super key (aka the Windows key).  
 ** Main keybindings
 
@@ -18,8 +18,8 @@ The MODKEY is set to the Super key (aka the Windows key).
 | MODKEY + SHIFT + k      | rotate stack -1 (rotates the windows in the stack)           |
 | MODKEY + h              | setmfact -0.05 (expands size of window)                      |
 | MODKEY + l              | setmfact +0.05 (shrinks size of window)                      |
-| MODKEY + .              | focusmon +1 (switches focus next monitors)                   |
-| MODKEY + ,              | focusmon -1 (switches focus to prev monitors)                |
+| MODKEY + ,              | focusmon +1 (switches focus next monitors)                   |
+| MODKEY + .              | focusmon -1 (switches focus to prev monitors)                |
 
 ** Layout controls
 
@@ -40,9 +40,18 @@ The MODKEY is set to the Super key (aka the Windows key).
 
 | Keybinding       | Action                                                                       |
 |------------------+------------------------------------------------------------------------------|
-| MODKEY + ALT + b | Browser Menu                                                            	  |
-| MODKEY + ALT + g | Game menu 																	  |
-| MODKEY + ALT + m | Calculator                 												  |
-| MODKEY + ALT + f | File manager (pcmanfm) 													  | 
-| MODKEY + ALT + PS| Screenshot (scrot) 														  |
+| MODKEY + ALT + b | Browser Menu                                                            	    |
+| MODKEY + ALT + g | Game menu 																	                                  |
+| MODKEY + ALT + m | Calculator                 												                          |
+| MODKEY + ALT + f | File manager (pcmanfm) 													                            |                           
+| MODKEY + ALT + PS| Screenshot (scrot) 														                              |
 
+** Tmux keybinds (Non-listed keybindings are default https://tmuxcheatsheet.com/)
+
+| Keybinding       | Action                                                                       |
+|------------------+------------------------------------------------------------------------------|
+| Ctrl + q         | Prefix                                                            	          |
+| Prefix - k       | Select up Pane 														                                  |
+| Prefix - j       | Select down Pane             												                        |
+| Prefix - h       | Select left Pane   			    										                            |                           
+| Prefix - l       | Select lright Pane   													                              |
