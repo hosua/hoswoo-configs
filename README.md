@@ -57,7 +57,10 @@ After tmux-plugin-manager and tmux-yank is added to ```~/.tmux.conf```, press (p
 
 ## My Color Schemes 
 There is a folder named ``` dwm-color-configs ```. 
-Currently, it has two color configurations and a bash script named ```compile-sources.sh``` that automatically compiles everything necessary to switch the color scheme. 
+
+WARNING: These scripts will overwrite your ```/etc/vimrc``` and ```~/.tmux.conf``` so please don't run them if you do not want that to happen!
+
+Currently, I have two preconfigured color configurations and a bash script named ```compile-sources.sh``` that automatically compiles everything necessary to switch the color scheme. 
 
 After using the script, you must restart dwm entirely for all changes to take effect. Tmux may also need to manually be set with ```:source-files ~/.tmux.conf```if a session was opened while running the script.
 		
