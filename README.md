@@ -8,7 +8,7 @@ Put scripts in ~/Desktop/Scripts/
 ```
 Necessary packages:
 ```
-sudo pacman -S base-devel xorg xcompgr
+sudo pacman -S xorg base-devel xcompgr
 ```
 Quick download for some optional packages used that I can think of right now:
 ```
@@ -20,7 +20,14 @@ sudo pacman -S vim neovim vundle
 ```
 When running vim for the first time, run ```:PluginInstall``` to install plugins in the vimrc
 
-Unofficial repos:``` https://aur.archlinux.org/packages/vim-youcompleteme-git/ https://aur.archlinux.org/packages/tmux-plugin-manager/```
+Unofficial repos that I use:
+``` 
+https://aur.archlinux.org/packages/vim-youcompleteme-git/ 
+https://aur.archlinux.org/packages/tmux-plugin-manager/
+https://aur.archlinux.org/packages/vundle-git/
+```
+
+
 To get an unnofficial package from the AUR. 
 ``` 
 1) clone the git with
