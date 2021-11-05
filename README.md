@@ -1,6 +1,8 @@
 These configs are not intended for other people to use, however I don't mind if you do. Just note that I probably won't be keeping the best documentation on everything I am doing.
 
-Also, keybindings are located in the dwm-hoswoo folder. I do not change them often so they will be up to date.
+The necessary packges that I list is not a comprehensive list. I forget many of the packages I've installed while setting things up so there will definitely be missing packages.
+
+Also, keybindings are located in the [dwm-hoswoo folder](https://github.com/hosua/hoswoo-configs/tree/main/dwm-hoswoo). I do not change them often so they will be up to date.
 
 ```
 Put .xinitrc in ~/
@@ -9,15 +11,15 @@ Put mysnips in ~/.vim
 Put vifm in ~/.config/
 Put scripts in ~/Desktop/Scripts/
 ```
-Necessary packages:
+## Necessary packages:
 ```
 sudo pacman -S xorg base-devel xcompgr
 ```
-Quick download for some optional packages used that I can think of right now:
+## Quick download for some optional packages used that I can think of right now:
 ```
 sudo pacman -S tmux chromium firefox alsa-utils scrot vifm feh neofetch 
 ```
-Vim related stuff
+## Vim related stuff
 ```
 sudo pacman -S vim neovim vundle
 ```
@@ -43,6 +45,8 @@ Info regarding tmux-yank:
 ``` https://github.com/tmux-plugins/tmux-yank```
 After tmux-plugin-manager and tmux-yank is added to ```~/.tmux.conf```, press (prefix + I) to install (prefix + U) will update
 
+
+## Color Schemes 
 There is a folder named ``` dwm-color-configs ```. 
 Currently, it has two color configurations and a bash script named ```compile-sources.sh``` that automatically compiles everything necessary to switch the color scheme. 
 
