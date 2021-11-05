@@ -1,4 +1,7 @@
-Below are some reminders for my future self
+These configs are not intended for other people to use, however I don't mind if you do. Just note that I probably won't be keeping the best documentation on everything I am doing.
+
+Also, keybindings are located in the dwm-hoswoo folder. I do not change them often so they will be up to date.
+
 ```
 Put .xinitrc in ~/
 Put .tmux.conf in ~/
@@ -27,7 +30,6 @@ https://aur.archlinux.org/packages/tmux-plugin-manager/
 https://aur.archlinux.org/packages/vundle-git/
 ```
 
-
 To get an unnofficial package from the AUR. 
 ``` 
 1) clone the git with
@@ -39,6 +41,11 @@ makepkg -si
 
 Info regarding tmux-yank: 
 ``` https://github.com/tmux-plugins/tmux-yank```
-Basically, after tmux-plugin-manager and tmux-yank is added to ```~/.tmux.conf```, press (prefix + I) to install (prefix + U) will update
+After tmux-plugin-manager and tmux-yank is added to ```~/.tmux.conf```, press (prefix + I) to install (prefix + U) will update
+
+There is a folder named ``` dwm-color-configs ```. 
+Currently, it has two color configurations and a bash script named ```compile-sources.sh``` that automatically compiles everything necessary to switch the color scheme. 
+
+After using the script, you must restart dwm entirely for all changes to take effect. Tmux may also need to manually be set with ```:source-files ~/.tmux.conf```if a session was opened while running the script.
 		
 
