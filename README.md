@@ -37,7 +37,7 @@ When running vim for the first time, run ```:PluginInstall``` to install plugins
 ## Unofficial repos that I use:
 ``` 
 https://aur.archlinux.org/packages/vim-youcompleteme-git/ 
-https://aur.archlinux.org/packages/tmux-plugin-manager/
+https://aur.archlinux.org/tmux-plugin-manager.git
 https://aur.archlinux.org/packages/vundle-git/
 ```
 
