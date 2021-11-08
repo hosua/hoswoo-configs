@@ -6,7 +6,7 @@ The necessary packges that I list is not a comprehensive list. I forget many of 
 
 ## Keybinds 
 
-Keybindings are located in the [dwm-hoswoo folder](https://github.com/hosua/hoswoo-configs/tree/main/dwm-hoswoo). I do not change them often so they will be up to date.
+Keybindings are located in [Sources/dwm-hoswoo](https://github.com/hosua/hoswoo-configs/tree/main/Sources/dwm-hoswoo). I do not change them often so they will be up to date.
 
 ## Initial setup
 ```
@@ -14,8 +14,8 @@ Put .xinitrc in ~/
 Put .tmux.conf in ~/
 Put mysnips in ~/.vim
 Put vifm in ~/.config/
-Put scripts in ~/Desktop/Scripts/
-Put dwmblocks in ~/Desktop/Sources/
+Put scripts in ~/Scripts/
+Put dwmblocks in ~/Sources/
 ```
 ## Necessary packages:
 ```
@@ -55,14 +55,5 @@ makepkg -si
 ``` https://github.com/tmux-plugins/tmux-yank```
 After tmux-plugin-manager and tmux-yank is added to ```~/.tmux.conf```, press (prefix + I) to install (prefix + U) will update
 
-
-## My Color Schemes 
-There is a folder named ``` dwm-color-configs ```. 
-
-WARNING: These scripts will overwrite your ```/etc/vimrc``` and ```~/.tmux.conf``` so please don't run them if you do not want that to happen!
-
-Currently, I have two preconfigured color configurations and a bash script named ```compile-sources.sh``` that automatically compiles everything necessary to switch the color scheme. 
-
-After using the script, you must restart dwm entirely for all changes to take effect. Tmux may also need to manually be set with ```:source-files ~/.tmux.conf```if a session was opened while running the script.
 		
 
