@@ -15,6 +15,7 @@ Put .tmux.conf in ~/
 Put mysnips in ~/.vim
 Put vifm in ~/.config/
 Put scripts in ~/Desktop/Scripts/
+Put dwmblocks in ~/Desktop/Sources/
 ```
 ## Necessary packages:
 ```
