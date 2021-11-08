@@ -72,8 +72,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 killall -9 dwm_bar.sh 
 killall -9 dwmblocks
 
-/home/hoswoo/Desktop/Sources/dwmblocks/dwmblocks &
-
+#/home/hoswoo/Sources/dwm-bar/dwm_bar.sh &
+/home/hoswoo/Sources/dwmblocks/dwmblocks &
 # Execute dwm
 exec dwm
 
