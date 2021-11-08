@@ -25,7 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
-
+Bundle 'wojciechkepka/vim-github-dark'
 
 
 " Snippets are separated from the engine. Add this if you want them:
@@ -116,4 +116,4 @@ let g:UltiSnipsJumpBackwardTrigger = "<S-b>"
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnips"]
 
-
+colorscheme ghdark
