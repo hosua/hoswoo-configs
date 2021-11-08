@@ -2,7 +2,7 @@
 
 These configs are not intended for other people to use, however I don't mind if you do. Just note that I probably won't be keeping the best documentation on everything I am doing.
 
-The necessary packges that I list is not a comprehensive list. I forget many of the packages I've installed while setting things up so there will definitely be missing packages.
+The necessary packges that I list is not a comprehensive list, just what I remember.
 
 ## Keybinds 
 
