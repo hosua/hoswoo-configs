@@ -7,7 +7,7 @@ char wttrCommand [50] = "curl -s wttr.in/$Morristown?format=1";
 
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{" 🔋 ", "cat /sys/class/power_supply/BAT0/capacity | awk '{print $1\"%\"}'", 	10, 	0},
+	{"🔋 ", "cat /sys/class/power_supply/BAT0/capacity | awk '{print $1\"%\"}'", 	10, 	0},
 	{"🖥️ Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
 	{"CPU:", "top -bn1 | grep Cpu | awk '{print $2\"%\"}'", 	1, 		0},
 	{"STO:", "df -h /home | tail -n 1 | awk '{print $3\"/\"$2}'",		5,		0},
