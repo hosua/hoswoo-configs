@@ -57,7 +57,7 @@ xrandr --output HDMI-0 --off --output DP-2 --mode 1920x1080 --rate 144 --output 
 picom -f &
 # xcompmgr &
 # Wallpaper
-feh '/home/hoswoo/Pictures/Wallpapers/Space_Ultrawide2.jpg' --bg-fill --no-xinerama &
+feh '/home/hoswoo/Pictures/Wallpapers/TripleSpace01.jpg' --bg-fill --no-xinerama &
 
 # Start simple terminal
 # st &
@@ -69,7 +69,10 @@ dunst &
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # Start dwm bar
-/home/hoswoo/Desktop/Sources/dwm-bar/dwm_bar.sh &
+killall -9 dwm_bar.sh 
+killall -9 dwmblocks
+
+/home/hoswoo/Desktop/Sources/dwmblocks/dwmblocks &
 
 # Execute dwm
 exec dwm
