@@ -1,9 +1,9 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 
 // Change location and wttrCommand to get the correct weather
-char location [50] = "Morristown:";
-// Change Morristown to a city near you.
-char wttrCommand [50] = "curl -s wttr.in/$Morristown?format=1";
+char location [50] = "Parsippany:";
+// Change Parsippany to a city near you.
+char wttrCommand [50] = "curl -s wttr.in/$Parsippany?format=1";
 
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
