@@ -13,33 +13,36 @@ Keybindings are located in [Sources/dwm-hoswoo](https://github.com/hosua/hoswoo-
 Put .xinitrc in ~/
 Put .tmux.conf in ~/
 Put mysnips in ~/.vim
-Put vifm in ~/.config/
+Put vifm and nvim in ~/.config/
 Put scripts in ~/Scripts/
 Put dwmblocks in ~/Sources/
 ```
 ## Necessary packages:
 ```
-sudo pacman -S xorg base-devel xcompgr
+sudo pacman -S xorg base-devel picom
 ```
 ## Quick download for some optional packages used that I can think of right now:
 ```
-sudo pacman -S tmux chromium firefox alsa-utils scrot vifm feh neofetch 
+sudo pacman -S tmux firefox alsa-utils scrot vifm feh neofetch 
 ```
 ## Vim related stuff
-```
-sudo pacman -S vim neovim vundle
-```
+``sudo pacman -S vim neovim `` Also install 
 
 ## Vim plugin-manager
 
 When running vim for the first time, run ```:PluginInstall``` to install plugins in the vimrc
 
+## Tmux
+Add the alias ``alias tmux='tmux -2'`` to force 256-colors (needed for colorscheme to work properly)
 
-## Unofficial repos that I use:
+## AUR packages for vim:
 ``` 
 https://aur.archlinux.org/packages/vim-youcompleteme-git/ 
-https://aur.archlinux.org/tmux-plugin-manager.git
 https://aur.archlinux.org/packages/vundle-git/
+```
+## AUR Package for tmux:
+```
+https://aur.archlinux.org/tmux-plugin-manager.git
 ```
 
 ## To get an unnofficial package from the AUR. 
