@@ -8,8 +8,12 @@ The statusbar is made from text output from commandline programs.
 Blocks are added and removed by editing the blocks.h header file.
 By default the blocks.h header file is created the first time you run make which copies the default config from blocks.def.h.
 This is so you can edit your status bar commands and they will not get overwritten in a future update.
-# patches
-Here are some patches to dwmblocks that add features that I either don't want to merge in, or that require a dwm patch to work.
-I do not maintain these but I will take pull requests to update them.
-<br>
-<a href=https://gist.github.com/IGeraGera/e4a5583b91b3eec2e81fdceb44dea717>dwmblocks-statuscmd-b6b0be4.diff</a>
+
+
+
+# Notes from hoswoo
+In order for these scripts to work, you must put my Scripts folder in some directory and modify the paths in the source code.
+
+You will need to install ``nerd-fonts-complete`` and an emoji package such as ``ttf-joypixels`` for everything to display properly. 
+
+For arch users, you can nerd-fonts from the AUR [here](https://aur.archlinux.org/packages/nerd-fonts-complete/). And download ``ttf-joypixels`` by simply running ``sudo pacman-S ttf-joypixels``.
