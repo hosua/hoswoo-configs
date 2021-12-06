@@ -1,13 +1,13 @@
 sudo echo This script will compile dmenu, dwmblocks, dwm, and st
-cd dmenu
-echo Compiling dmenu\n
+cd dmenu/dmenu-test
+echo Compiling dmenu
 sudo make clean install
-echo Compiling dwmblocks\n
-cd ../dwmblocks
+echo Compiling dwmblocks
+cd ../../dwmblocks
 sudo make clean install
-echo Compiling dwm\n
+echo Compiling dwm
 cd ../dwm-hoswoo
 sudo make clean install
-echo Compiling st\n
+echo Compiling st
 cd ../st
 sudo make clean install
