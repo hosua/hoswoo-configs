@@ -1,23 +1,25 @@
-#output=$(amixer | grep "Left: Playback"| awk 'NR==1')
-playback="Mono: Playback"
+vol_source="Left: Playback"
+output=$(amixer | grep "$vol_source" | awk 'NR==1')
 
-output=$(amixer | grep "$playback" | awk 'NR==1')
 # Search the line for on or off
-if [[ "$output" == *"on"* ]]; then
+if [[ "$output" == *"[on]"* ]]; then
 	onoff='on'
-elif [[ "$output" == *"off"* ]]; then
+elif [[ "$output" == *"[off]"* ]]; then
 	onoff='off'
 fi
 
-if [[ $onoff == 'on' ]]
-then 
-	#echo $(amixer sget Master | grep "Mono:" | awk '{print "🔊 "$4}' | sed 's/[][]//g')
-	echo $(amixer | grep "$playback"  | awk '{print "🔊 "$4}' | sed 's/[][]//g')
+volume=$(amixer | grep "$vol_source" | awk '{print $5}' | sed 's/[][]//g' | cut -d "%" -f 1)
+
+if (( $volume >= 66 )); then
+	icon='墳'
+elif (( $volume >= 33 )); then
+	icon='奔'
+else
+	icon='奄'
 fi
 
-if [[ $onoff == 'off' ]];
-then
-	#echo $(amixer sget Master | grep "Mono:" | awk '{print "🔇 "$4}' | sed 's/[][]//g')
-	echo $(amixer | grep "$playback" | awk '{print "🔇 "$4}' | sed 's/[][]//g')
+if [[ $onoff == 'off' ]]; then
+	icon='婢'
 fi
 
+echo "$icon $volume%"
