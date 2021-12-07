@@ -1,7 +1,13 @@
-signal=$(iwconfig wlo1 | grep 'Link Quality' | awk 'NR=1{print $2}' | sed 's/Quality=//g')
+# Get device name with iwconfig
+device="wlo1"
+
+signal=$(iwconfig $device | grep 'Link Quality' | awk 'NR=1{print $2}' | sed 's/Quality=//g')
+SSID=$(iwconfig $device | grep 'ESSID:' | cut -d \" -f 2)
 
 if [[ $signal == '' ]]; then
-	echo "No internet Connection"
+	message="No internet Connection"
 else 
-	echo $signal
+	message="$SSID $signal"
 fi
+
+echo "📶 $message" 
