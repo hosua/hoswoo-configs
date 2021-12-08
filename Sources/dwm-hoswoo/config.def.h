@@ -79,7 +79,7 @@ static const char *dmenucmd[]    = { "dmenu_run", "-p", "Run: ", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 /* Added functions */
-static const char *screenshot[] = {"escrotum", "/home/hoswoo/Pictures/Screenshots/IMG.jpg", "-s", NULL };
+static const char *screenshot[] = {"/home/hoswoo/Scripts/screenshot.sh", NULL };
 static const char *powermenu[] = { "/home/hoswoo/Scripts/powermenu.sh", NULL };
 static const char *gamemenu[] = { "/home/hoswoo/Scripts/gamemenu.sh", NULL };
 #define CMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
