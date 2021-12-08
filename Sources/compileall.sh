@@ -9,5 +9,5 @@ echo Compiling dwm
 cd ../dwm-hoswoo
 sudo make clean install
 echo Compiling st
-cd ../st
+cd ../st-w3m-noalpha
 sudo make clean install
