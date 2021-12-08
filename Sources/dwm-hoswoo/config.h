@@ -11,16 +11,22 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[] = {"Mononoki Nerd Font:size=10:antialias=true:autohint=true",
+static const char *fonts[] = {"Liberation Mono:size=10:antialias=true:autohint=true",
                                   "Hack:size=9:antialias=true:autohint=true",
                                   "JoyPixels:size=10:antialias=true:autohint=true"};
 static const char dmenufont[]       = "monospace:size=10";
 
 /* Color scheme */
-static const char col_1[]  = "#282a36"; /* background color of bar */
-static const char col_2[]  = "#282a36"; /* border color unfocused windows */
-static const char col_3[]  = "#f8f8f2";
-static const char col_4[]  = "#660000"; /* border color focused windows and tags */
+static const char col_1[]  = "#282A36"; /* background color of bar */
+static const char col_2[]  = "#282A36"; /* border color unfocused windows */
+static const char col_3[]  = "#F8F8F2";
+static const char col_4[]  = "#2D59A6"; /* border color focused windows and tags */
+/* Colors I like 
+#66000 - Blood Red 
+#2A72BF - Blue 1
+#2D59A6 - Blue 2
+#712DA6 - Purple
+*/
 
 static const char *colors[][3]        = {
 	/*               fg         bg         border   */
@@ -72,7 +78,7 @@ static const char *dmenucmd[]    = { "dmenu_run", "-p", "Run: ", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 /* Added functions */
-static const char *screenshot[] = {"scrot", "/home/hoswoo/Pictures/Screenshots/IMG.jpg", "-s", NULL };
+static const char *screenshot[] = {"escrotum", "/home/hoswoo/Pictures/Screenshots/IMG.jpg", "-s", NULL };
 static const char *powermenu[] = { "/home/hoswoo/Scripts/powermenu.sh", NULL };
 static const char *gamemenu[] = { "/home/hoswoo/Scripts/gamemenu.sh", NULL };
 #define CMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
@@ -80,7 +86,7 @@ static const char *gamemenu[] = { "/home/hoswoo/Scripts/gamemenu.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = dmenucmd } },
+	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = dmenucmd} },
 	{ MODKEY, 			            XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
@@ -107,10 +113,10 @@ static Key keys[] = {
 	/* Monitor navigation */
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,                       XK_period,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       XK_comma, focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_period,  tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_comma, tagmon,         {.i = +1 } },
 	/* Workspace selection */
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
@@ -156,3 +162,4 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
+ 
