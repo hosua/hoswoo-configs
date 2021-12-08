@@ -495,9 +495,9 @@ buttonpress(XEvent *e)
 			click = ClkTagBar;
 			arg.ui = 1 << i;
 		} else if (ev->x < x + blw)
-			click = ClkLtSymbol;
-		else if (ev->x > selmon->ww - (int)TEXTW(stext) - getsystraywidth())
-			click = ClkStatusText;
+			click = ClkLtSymbol;	
+	else if (ev->x > selmon->ww - (int)TEXTW(stext) - getsystraywidth())
+	click = ClkStatusText;
 		else
 			click = ClkWinTitle;
 	} else if ((c = wintoclient(ev->window))) {
@@ -673,8 +673,9 @@ configurenotify(XEvent *e)
 			drw_resize(drw, sw, bh);
 			updatebars();
 			for (m = mons; m; m = m->next) {
-				XMoveResizeWindow(dpy, m->barwin, m->wx, m->by, m->ww, bh);
+			resizebarwin(m);
 			}
+			XMoveResizeWindow(dpy, m->barwin, m->wx, m->by, m->ww, bh);
 			focus(NULL);
 			arrange(NULL);
 		}

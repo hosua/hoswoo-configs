@@ -41,6 +41,7 @@ static const Rule rules[] = {
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
+
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
@@ -71,13 +72,12 @@ static const char *dmenucmd[]    = { "dmenu_run", "-p", "Run: ", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 /* Added functions */
-static const char *screenshot[] = {"scrot", "/home/hosua/Pictures/Screenshots/IMG.jpg", "-s", NULL };
-static const char *powermenu[] = { "/home/hosua/Scripts/powermenu.sh", NULL };
-static const char *gamemenu[] = { "/home/hosua/Scripts/gamemenu.sh", NULL };
+static const char *screenshot[] = {"scrot", "/home/hoswoo/Pictures/Screenshots/IMG.jpg", "-s", NULL };
+static const char *powermenu[] = { "/home/hoswoo/Scripts/powermenu.sh", NULL };
+static const char *gamemenu[] = { "/home/hoswoo/Scripts/gamemenu.sh", NULL };
 #define CMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 
-#include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = dmenucmd } },
@@ -91,8 +91,6 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
@@ -125,7 +123,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 
 	/* Quit and restart */
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_minus,      quit,           {0} },
 	{ MODKEY|ShiftMask, 			XK_r,      quit,           {1} }, 
 
 	/* Keybinds for specific programs and dmenus (All use SUPER + ALT + "key") */

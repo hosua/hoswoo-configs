@@ -100,3 +100,4 @@ index 421bf27..1ec8b10 100644
  run(void)
  {
  	XEvent ev;
+
