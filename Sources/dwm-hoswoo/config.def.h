@@ -1,3 +1,4 @@
+
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
@@ -135,7 +136,7 @@ static Key keys[] = {
 	/* Keybinds for specific programs and dmenus (All use SUPER + ALT + "key") */
 	{ MODKEY|Mod1Mask,              XK_f,      spawn,          CMD("pcmanfm") },	
 	{ MODKEY|Mod1Mask,              XK_n,      spawn,          CMD("nm-connection-editor") },
-	{ MODKEY|Mod1Mask,			XK_Print,	spawn,	{.v = screenshot } },
+	{ 0,							XK_Print,	spawn,	{.v = screenshot } },
 	//{ MODKEY|Mod1Mask,			XK_c,		spawn,	CMD("qalculate-gtk") },
 	{ MODKEY|Mod1Mask,			XK_c,		spawn,	CMD("qalculate-qt") },
 	{ MODKEY|Mod1Mask,          XK_b,      spawn,          CMD("firefox") },
