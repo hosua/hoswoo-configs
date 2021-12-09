@@ -1,4 +1,3 @@
-
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
@@ -12,10 +11,11 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[] = {"Liberation Mono:size=10:antialias=true:autohint=true",
-                                  "Hack:size=9:antialias=true:autohint=true",
-                                  "JoyPixels:size=10:antialias=true:autohint=true"};
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[] = {	"SauceCodePro Nerd Font Mono:size=12:antialias=true:hinting=true",
+								"DroidSansMono:size=12:antialias=true:autohint=true",
+                            	"Hack:size=9:antialias=true:autohint=true",
+                            	"JoyPixels:size=14:antialias=true:autohint=true"};
+static const char dmenufont[] = "monospace:size=10";
 
 /* Color scheme */
 static const char col_1[]  = "#282A36"; /* background color of bar */
@@ -79,9 +79,9 @@ static const char *dmenucmd[]    = { "dmenu_run", "-p", "Run: ", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 /* Added functions */
-static const char *screenshot[] = {"/home/hoswoo/Scripts/screenshot.sh", NULL };
-static const char *powermenu[] = { "/home/hoswoo/Scripts/powermenu.sh", NULL };
-static const char *gamemenu[] = { "/home/hoswoo/Scripts/gamemenu.sh", NULL };
+static const char *screenshot[] = {"/home/hosua/Scripts/screenshot.sh",NULL };
+static const char *powermenu[] = { "/home/hosua/Scripts/powermenu.sh", NULL };
+static const char *gamemenu[] = { "/home/hosua/Scripts/gamemenu.sh", NULL };
 #define CMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 
@@ -136,7 +136,7 @@ static Key keys[] = {
 	/* Keybinds for specific programs and dmenus (All use SUPER + ALT + "key") */
 	{ MODKEY|Mod1Mask,              XK_f,      spawn,          CMD("pcmanfm") },	
 	{ MODKEY|Mod1Mask,              XK_n,      spawn,          CMD("nm-connection-editor") },
-	{ 0,							XK_Print,	spawn,	{.v = screenshot } },
+	{ 0,						XK_Print,	spawn,	{.v = screenshot } },
 	//{ MODKEY|Mod1Mask,			XK_c,		spawn,	CMD("qalculate-gtk") },
 	{ MODKEY|Mod1Mask,			XK_c,		spawn,	CMD("qalculate-qt") },
 	{ MODKEY|Mod1Mask,          XK_b,      spawn,          CMD("firefox") },
@@ -164,3 +164,4 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
  
+
