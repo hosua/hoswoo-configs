@@ -10,6 +10,10 @@ numdigits=3 # The number of digits long that the appended number will be
 # END{print} will print the last line
 # The following cut commands extracts only the number from that output.
 # Using regular expressions to check if the file exists
+# We use 10# here because we have leading zeros in our number.
+# Leading zeros indicates an octal number in C, which cannot go over 008 (it's base 8)
+# We can force bash to convert an octal to base 10 ( or any base ) by prepending the value with. `10#`,
+# with 10 indicating the base we want.
 count=$(( 10#$(ls $path -1a | grep "$filename"_[0-9]*\."$filetype" | awk 'END{print}' | cut -d . -f 1 | cut -d _ -f 2)))
 if [[ $count == '' ]]; then 
 	# Now check if we have the file type, but without a number
