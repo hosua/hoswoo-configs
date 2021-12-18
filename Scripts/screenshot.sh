@@ -10,7 +10,7 @@ numdigits=3 # The number of digits long that the appended number will be
 # END{print} will print the last line
 # The following cut commands extracts only the number from that output.
 # Using regular expressions to check if the file exists
-count=$(ls $path -1a | grep "$filename"_[0-9]*\."$filetype" | awk 'END{print}' | cut -d . -f 1 | cut -d _ -f 2)
+count=$(( 10#$(ls $path -1a | grep "$filename"_[0-9]*\."$filetype" | awk 'END{print}' | cut -d . -f 1 | cut -d _ -f 2)))
 if [[ $count == '' ]]; then 
 	# Now check if we have the file type, but without a number
 	count=$(ls $path -1a | grep "$filename"."$filetype" | awk 'END{print}' | cut -d . -f 1 | cut -d _ -f 2)

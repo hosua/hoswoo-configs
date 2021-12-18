@@ -1,10 +1,8 @@
 
 function browsermenu {
-	options="chromium\nfirefox\nCancel"\	
+	options="firefox\nCancel"\	
 	selected=$(echo -e $options | dmenu)
-	if [[ $selected = "chromium" ]]; then
-		chromium
-	elif [[ $selected = "firefox" ]]; then
+	if [[ $selected = "firefox" ]]; then
 		firefox
 	elif [[ $selected = "Cancel" ]]; then
 		return

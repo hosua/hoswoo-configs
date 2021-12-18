@@ -1,4 +1,4 @@
-vol_source="Left: Playback"
+vol_source="Mono: Playback"
 output=$(amixer | grep "$vol_source" | awk 'NR==1')
 
 # Search the line for on or off
@@ -8,7 +8,8 @@ elif [[ "$output" == *"[off]"* ]]; then
 	onoff='off'
 fi
 
-volume=$(amixer | grep "$vol_source" | awk '{print $5}' | sed 's/[][]//g' | cut -d "%" -f 1)
+volume=$(amixer | grep "Mono: Playback" | cut -d % -f 1 | cut -d [ -f 2)
+
 
 if (( $volume >= 66 )); then
 	icon='墳'
@@ -23,3 +24,4 @@ if [[ $onoff == 'off' ]]; then
 fi
 
 echo "$icon $volume%"
+
