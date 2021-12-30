@@ -1,0 +1,9 @@
+#/bin/sh
+# A script that suppresses the output of any command and runs it in the background
+comm=""
+
+for i in "$@"; do
+	comm+="$i "
+done
+
+nohup $comm > /dev/null 2>&1 &
