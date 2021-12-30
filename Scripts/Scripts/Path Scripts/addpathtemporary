@@ -1,2 +1,0 @@
-echo "To add a new path temporarily, type the command below and replace new_dir with the directory to add"
-echo "export PATH=new_dir:\$PATH"
