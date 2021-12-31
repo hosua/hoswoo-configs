@@ -1,0 +1,41 @@
+
+Step 1: 
+su - root
+virsh start default
+virsh autostart default
+
+Step 2:
+sudo usermod -a -G libvirt username
+sudoedit /etc/libvirt/qemu.conf 
+Uncomment and change line with user and group to username and group to libvirt
+
+Step 3:
+sudo systemctl restart libvirtd
+Restart may be required
+
+You will have to add the disk to virt-manager.
+Open the virtual machine (don't run it), click add hardware on the bottom left, storage, then select your disk image.
+
+
+To change mac resolution:
+In macOS VM, open terminal
+sudo diskutil list
+Find EFI partition, there are two. One will have viewable files in them.
+Mount the partitions with sudo diskutil mount disk0s1, for example.
+Unmount with sudo diskutil umount disk0s1 to try the other one if necessary.
+Go to CLOVER directory, open config.plist
+
+Change the line under ScreenResolution to desired resolution (1600x900 recommended)
+
+Start VM through ./basic.sh script, NOT virt-manager.
+Press ESC to boot BIOS/UEFI thing.
+Select Device manager
+Select OVMF
+Select Resolution you picked earlier.
+
+Run sudo ./make.sh -add
+You will have to add the disk again by opening the virtual machine (not running it), click add hardware on the bottom left, storage, then select your disk image.
+
+
+
+
