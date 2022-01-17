@@ -24,8 +24,46 @@ Plugin 'VundleVim/Vundle.vim'
 " Vundle Plugins
 Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
+Bundle 'lambdalisue/nerdfont.vim'
+
+" Syntax
+Bundle 'nvie/vim-flake8'
+
+" File manager 
+Bundle 'preservim/nerdtree'
+Bundle 'tiagofumo/vim-nerdtree-syntax-highlight'
+Bundle 'ryanoasis/vim-devicons'
+Bundle 'PhilRunninger/nerdtree-visual-selection'
+
+
+" Color Schemes 
 Bundle 'wojciechkepka/vim-github-dark'
+Bundle 'cocopon/iceberg.vim'
+Bundle 'sonph/onehalf'
+Bundle 'morhetz/gruvbox'
+Bundle 'arcticicestudio/nord-vim'
+Bundle 'joshdick/onedark.vim'
+Bundle 'bluz71/vim-moonfly-colors'
+Bundle 'Mangeshrex/uwu.vim'
+Bundle 'jacoborus/tender.vim'
+Bundle 'ray-x/aurora'
+Bundle 'bluz71/vim-nightfly-guicolors'
+Bundle 'tomasiser/vim-code-dark'
+Bundle 'ajmwagar/vim-deus'
+Bundle 'ayu-theme/ayu-vim'
+Bundle 'sjl/badwolf'
+Bundle 'romainl/Apprentice'
+Bundle 'drewtempelmeyer/palenight.vim'
+Bundle 'fenetikm/falcon'
+Bundle 'preservim/vim-colors-pencil'
+Bundle 'pineapplegiant/spaceduck'
+Bundle 'challenger-deep-theme/vim'
+Bundle 'liuchengxu/space-vim-dark'
+Bundle 'ghifarit53/tokyonight-vim'
+Bundle 'kyoz/purify'
+Bundle 'hzchirs/vim-material'
+Bundle 'artanikin/vim-synthwave84'
+Bundle 'tyrannicaltoucan/vim-deep-space'
 
 
 " Snippets are separated from the engine. Add this if you want them:
@@ -95,6 +133,7 @@ set shiftwidth=4
 set smartindent
 set nowrap
 set noswapfile
+set mouse=a
 set incsearch
 set nobackup
 set undodir=~/.vim/undodir
@@ -113,7 +152,12 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger = "<S-tab>"
 let g:UltiSnipsJumpForwardTrigger = "<S-f>"
 let g:UltiSnipsJumpBackwardTrigger = "<S-b>"
-
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnips"]
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf=1
+" let g:loaded_youcompleteme = 0
 
-colorscheme ghdark
+colorscheme moonfly
+" start NERDTree and put cursor back in other window
+autocmd VimEnter * NERDTree ~/Desktop/Programming | wincmd p
+
