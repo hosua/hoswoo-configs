@@ -9,7 +9,6 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=/usr/share/vim/vimfiles/autoload/vundle.vim
-
 " if we set .vim as runtime path, we don't have to type absolute path for
 " suddirectories.
 set rtp+=~/.vim
@@ -25,6 +24,8 @@ Plugin 'VundleVim/Vundle.vim'
 Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
 Bundle 'lambdalisue/nerdfont.vim'
+Bundle 'chrisbra/Colorizer'
+Bundle 'junegunn/fzf'
 
 " Syntax
 Bundle 'nvie/vim-flake8'
@@ -157,7 +158,7 @@ let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=1
 " let g:loaded_youcompleteme = 0
 
-colorscheme moonfly
+colorscheme aurora
 " start NERDTree and put cursor back in other window
 autocmd VimEnter * NERDTree ~/Desktop/Programming | wincmd p
 
