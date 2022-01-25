@@ -1,6 +1,6 @@
 # A simple script that cleans my screenshots directory when it gets cluttered.
 
-all=$(date | awk '{print $2" "$3" "$7}')
+all=$(date +"%m %d %y"| awk '{print $1" "$2" "$3}')
 month=$(echo $all | awk '{print $1}')
 day=$(echo $all | awk '{print $2}')
 year=$(echo $all | awk '{print $3}')
@@ -24,6 +24,5 @@ FTYPES=(".jpg" ".png" ".jpeg" ".gif" ".tif" ".tiff" ".bmp")
 for t in ${FTYPES[@]}; do
 	# Take care not to put quotes around any regular expressions. Otherwise you will take
 	# the literal character of that regex (For example, don't quote the *$t* here)
-
 	mv *$t* "$DIRNAME"
 done
