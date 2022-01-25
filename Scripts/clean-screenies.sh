@@ -25,7 +25,5 @@ for t in ${FTYPES[@]}; do
 	# Take care not to put quotes around any regular expressions. Otherwise you will take
 	# the literal character of that regex (For example, don't quote the *$t* here)
 
-	if [ -f *$t* ]; then 
-		mv *$t* "$DIRNAME"
-	fi
+	mv *$t* "$DIRNAME"
 done
