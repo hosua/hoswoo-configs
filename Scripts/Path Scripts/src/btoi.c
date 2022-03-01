@@ -3,7 +3,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-unsigned int binaryToDecimal(char *str){
+unsigned long long binaryToDecimal(char *str){
 	unsigned int decimal = 0;
 	int len = strlen(str);	
 	int bit = 1;
@@ -34,6 +34,6 @@ int main(int argc, char *argv[]){
 	}
 	verifyInput(argv[1]);
 
-	printf("%u\n", binaryToDecimal(argv[1]));
+	printf("%llu\n", binaryToDecimal(argv[1]));
 	return 0;
 }

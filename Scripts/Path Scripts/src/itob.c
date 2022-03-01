@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 
-void printBinary(unsigned int n){
+void printBinary(unsigned long long n){
 	if (n == 0){
 		return;
 	}

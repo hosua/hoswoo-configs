@@ -6,7 +6,7 @@
 
 typedef enum { false, true } bool;
 bool startsWith(const char *a, const char *b);
-unsigned int hexToDecimal(char *str);
+unsigned long long hexToDecimal(char *str);
 int verifyInput(char *str);
 
 
@@ -25,9 +25,9 @@ bool startsWith(const char *a, const char *b){
    return 0;
 }
 
-unsigned int hexToDecimal(char *str){
+unsigned long long hexToDecimal(char *str){
 	int len = strlen(str), offset = 0;	
-	unsigned int decimal = 0;
+	unsigned long long decimal = 0;
 	int placeVal = 0;
 	int ch;
 
@@ -43,7 +43,7 @@ unsigned int hexToDecimal(char *str){
 			num = ch - '0';
 		decimal += num * pow(16, placeVal);
 	}
-	printf("%u\n", decimal);
+	printf("%llu\n", decimal);
 	return decimal;
 }
 
